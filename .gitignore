@@ -1,0 +1,64 @@
+# ==========================================================
+#  .gitignore para proyecto Unity (LUMEN)
+#  Solo se versionan: Assets/, Packages/, ProjectSettings/
+# ==========================================================
+
+# --- Metadatos de Unity Version Control (no mezclar con Git) ---
+.plastic/
+*.plastic
+
+# Carpetas que Unity genera y regenera solo (NO subir)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Excepción: los .meta SÍ se versionan aunque estén dentro de Assets
+!/[Aa]ssets/**/*.meta
+
+# Archivos de IDEs (Visual Studio / Rider / VS Code)
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Metas de archivos generados
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Reporte de crash
+sysinfo.txt
+
+# Builds exportados
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics
+crashlytics-build.properties
+
+# Addressables empaquetados
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# StreamingAssets autogenerados de Android
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
